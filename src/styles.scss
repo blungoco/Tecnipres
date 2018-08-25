@@ -1,20 +1,19 @@
 .intro-2 {
-  background: url('assets/img/background.jpeg')
-    no-repeat center center;
+  background: url('assets/img/background.jpeg') no-repeat center center;
   background-size: cover;
 }
 .view {
   height: 100vh !important;
 }
 .top-nav-collapse {
-  background-color: #387643 !important;
+  background-color: #3f824c !important;
 }
 .navbar:not(.top-nav-collapse) {
   background: transparent !important;
 }
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background: #387643 !important;
+    background: #3f824c !important;
   }
 }
 .md-form .prefix {
@@ -28,5 +27,20 @@ h6 {
 .full-height body,
 .full-height header,
 .full-height header .view {
-  height: 1150px !important;
+  height: 100vh !important;
+}
+
+.controls-top {
+  display: none;
+}
+
+.carousel-multi-item .carousel-indicators li {
+  background-color: #3f824c !important;
+}
+.carousel-multi-item .carousel-indicators li.active {
+  background-color: darken(#3f824c, 10%) !important;
+}
+
+.md-form > i {
+  margin-top: 0.5rem !important;
 }
