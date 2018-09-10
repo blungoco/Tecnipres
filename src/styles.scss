@@ -2,9 +2,7 @@
   background: url('assets/img/background.jpeg') no-repeat center center;
   background-size: cover;
 }
-.view {
-  height: 100vh !important;
-}
+
 .top-nav-collapse {
   background-color: #3f824c !important;
 }
@@ -28,6 +26,15 @@ h6 {
 .full-height header,
 .full-height header .view {
   height: 100vh !important;
+}
+
+@media (max-width: 575.98px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 150vh !important;
+  }
 }
 
 .controls-top {

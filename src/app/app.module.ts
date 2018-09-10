@@ -1,4 +1,3 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
@@ -7,7 +6,11 @@ import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 
-import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-uikit-pro-standard';
+import {
+  MDBSpinningPreloader,
+  MDBBootstrapModulesPro,
+  ToastModule
+} from 'ng-uikit-pro-standard';
 import { IntroComponent } from './intro/intro.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -32,11 +35,11 @@ import { PartnersComponent } from './partners/partners.component';
     MDBBootstrapModulesPro.forRoot(),
     AgmCoreModule.forRoot({
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
-      apiKey: 'Your_api_key'
+      apiKey: 'AIzaSyBKFOxg1OufdQerlE2Au9YrarHqeJOjeNs'
     })
   ],
   providers: [MDBSpinningPreloader],
   bootstrap: [AppComponent],
-  schemas:      [ NO_ERRORS_SCHEMA ]
+  schemas: [NO_ERRORS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {}
