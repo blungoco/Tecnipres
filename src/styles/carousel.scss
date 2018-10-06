@@ -1,0 +1,16 @@
+@import 'variables';
+
+.controls-top {
+  display: none;
+}
+
+.carousel-multi-item .carousel-indicators li {
+  background-color: $primary-color !important;
+}
+.carousel-multi-item .carousel-indicators li.active {
+  background-color: darken($primary-color, 10%) !important;
+}
+
+.md-form > i {
+  margin-top: 0.5rem !important;
+}

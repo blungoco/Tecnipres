@@ -1,0 +1,21 @@
+@import 'variables';
+
+.top-nav-collapse {
+  background-color: $primary-color !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: $primary-color !important;
+}
+
+.md-form .prefix {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.full-height,
+.full-height body,
+.full-height header,
+.full-height header .view {
+  height: 100vh !important;
+}
