@@ -1,11 +1,11 @@
 @import 'variables';
 
 .top-nav-collapse {
-  background-color: $primary-color !important;
+  background-color: white !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: $primary-color !important;
+  background: white !important;
 }
 
 .md-form .prefix {
@@ -18,4 +18,9 @@
 .full-height header,
 .full-height header .view {
   height: 100vh !important;
+}
+
+.navbar.navbar-dark .navbar-toggler-icon {
+  background: $primary-color;
+  -webkit-mask: url('assets/img/menu.svg') !important;
 }
