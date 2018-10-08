@@ -5,11 +5,11 @@
   <div class="container">
 
     <!--Section heading-->
-    <h2 class="h1 py-3 font-weight-bold wow fadeInDown">Productos</h2>
+    <h2 class="h1 py-3 font-weight-bold wow fadeIn">Productos</h2>
 
     <div class="row">
       <ng-container *ngFor="let product of products">
-        <div class="col-12 col-md-6 mt-3">
+        <div class="col-12 col-md-6 mt-3 wow fadeIn">
           <app-product-card [product]="product"></app-product-card>
         </div>
       </ng-container>
