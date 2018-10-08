@@ -1,109 +1,42 @@
-<mdb-card-reveal #cards>
-  <!-- Card front -->
-  <div class="card card-front">
+<mdb-flipping-card *ngIf="product"
+                   #card
+                   (click)="card.toggle()">
+  <!--Front Side-->
+  <div class="face front card tp-box_side tp-box_front">
     <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo11.jpg" alt="Card image cap">
+    <div class="view overlay waves-light"
+         mdbWavesEffect>
+      <img class="card-img-top"
+           [src]="product.imageUrl"
+           alt="Card image cap">
       <a>
         <div class="mask rgba-white-slight"></div>
       </a>
     </div>
     <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body">
-      <!--Social shares button-->
-      <a class="activator mr-2">
-        <i class="fa fa-share-alt" (click)="cards.toggle()"></i>
-      </a>
-      <!--Title-->
-      <h4 class="card-title">Card title</h4>
-      <hr>
-      <!--Text-->
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a class="link-text">
-        <h5 class="waves-light" mdbWavesEffect>Read more
-          <i class="fa fa-chevron-right waves-light" mdbWavesEffect></i>
-        </h5>
-      </a>
-    </div>
-    <!--/.Card content-->
-  </div>
-  <!--/.Card Front-->
+    <!--/.Image-->
 
-  <!-- Card reveal -->
-  <div class="card-reveal white">
-
-    <!-- Content -->
+    <!--Content-->
     <div class="content text-center">
-
-      <h4 class="card-title font-weight-bold py-4">Social shares
-        <i class="fa fa-close text-muted" (click)="cards.toggle()"></i>
-      </h4>
-      <hr>
-      <!-- Social Icons -->
-      <ul class="list-unstyled list-inline d-flex justify-content-center flex-wrap">
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" class="btn-dribbble">
-            <i class="fa fa-dribbble"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" class="btn-slack">
-            <i class="fa fa-slack"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" class="btn-ins">
-            <i class="fa fa-instagram"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" class="btn-pin">
-            <i class="fa fa-pinterest"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" class="btn-tw">
-            <i class="fa fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" class="btn-gplus">
-            <i class="fa fa-google-plus"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" class="btn-git">
-            <i class="fa fa-github"> </i>
-          </a>
-        </li>
-      </ul>
-      <h5 class="font-weight-bold my-4">Join our community</h5>
-      <hr>
-      <!-- Social Icons -->
-      <ul class="list-unstyled list-inline d-flex justify-content-center flex-wrap mt-4">
-        <li class="list-inline-item">
-          <a mdbBtn class="btn-fb px-4">
-            <i class="fa fa-facebook"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn class="btn-tw px-4">
-            <i class="fa fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn class="btn-li px-4">
-            <i class="fa fa-linkedin"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn class="btn-ins px-4">
-            <i class="fa fa-instagram"> </i>
-          </a>
-        </li>
-      </ul>
+      <h4>{{product.name}}</h4>
     </div>
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <h5>{{product.intro}}</h5>
+      </div>
+    </div>
+    <!--/.Content-->
+
   </div>
-  <!-- Card reveal -->
-</mdb-card-reveal>
+  <!--/.Front Side-->
+
+  <!--Back Side-->
+  <div class="face back tp-box_side tp-box_back text-justify">
+    <p *ngFor="let paragraph of product.description">
+      {{paragraph}}
+    </p>
+  </div>
+  <!--/.Back Side-->
+</mdb-flipping-card>
+<!--/.Rotating card-->
