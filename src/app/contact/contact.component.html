@@ -1,101 +1,104 @@
 <!--Section: Contact v.1-->
 <section id="contact"
-         class="pb-5 container text-center">
+         class="py-5 text-center">
 
-  <!--Section heading-->
-  <h2 class="font-weight-bold h1 py-5 wow fadeInDown">
-    <strong>Contáctanos</strong>
-  </h2>
+  <div class="container">
 
-  <div class="row">
 
-    <!--Grid column-->
-    <div class="col-lg-5 my-4">
-      <div class="row wow fadeInDown">
-        <!-- Grid column -->
-        <div class="col-12 text-center">
-          <h5 class="font-weight-bold mt-4 mb-3">Ing. Miguel Ángel González Zapién</h5>
-          <p class="text-uppercase primary-text mb-1">
-            <strong>Representante legal</strong>
-          </p>
-          <ul class="list-unstyled mb-0">
-            <!--Email-->
-            <a href="mailto:magz67@live.com.mx"
-               type="button"
-               mdbBtn
+    <!--Section heading-->
+    <h2 class="font-weight-bold h1 py-5 wow fadeInDown">
+      <strong>Contáctanos</strong>
+    </h2>
+
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-5 my-4">
+        <div class="row wow fadeInDown">
+          <!-- Grid column -->
+          <div class="col-12 text-center">
+            <h5 class="font-weight-bold mt-4 mb-3">Ing. Miguel Ángel González Zapién</h5>
+            <p class="text-uppercase primary-text mb-1">
+              <strong>Representante legal</strong>
+            </p>
+            <ul class="list-unstyled mb-0">
+              <!--Email-->
+              <a href="mailto:magz67@live.com.mx"
+                 type="button"
+                 mdbBtn
+                 floating="true"
+                 size="sm"
+                 class="mx-1 mb-0 btn-email">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <div class="row mb-3 wow fadeInDown">
+          <!-- Grid column -->
+          <div class="col-12 text-center">
+            <h5 class="font-weight-bold mt-4 mb-3">Lic. Beatriz Ausencia Peña Martínez</h5>
+            <p class="text-uppercase primary-text mb-1">
+              <strong>Asistente Administrativo</strong>
+            </p>
+            <ul class="list-unstyled mb-0">
+              <!--Email-->
+              <a href="mailto:tecnipres@hotmail.com"
+                 type="button"
+                 mdbBtn
+                 floating="true"
+                 size="sm"
+                 class="mx-1 mb-0 btn-email">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Buttons-->
+        <div class="row text-center wow fadeInDown">
+          <div class="col-md-6">
+            <a mdbBtn
                floating="true"
-               size="sm"
-               class="mx-1 mb-0 btn-email">
-              <i class="fa fa-envelope"></i>
+               class="button-primary waves-light"
+               mdbWavesEffect>
+              <i class="fa fa-map-marker"></i>
             </a>
-          </ul>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <div class="row mb-3 wow fadeInDown">
-        <!-- Grid column -->
-        <div class="col-12 text-center">
-          <h5 class="font-weight-bold mt-4 mb-3">Lic. Beatriz Ausencia Peña Martínez</h5>
-          <p class="text-uppercase primary-text mb-1">
-            <strong>Asistente Administrativo</strong>
-          </p>
-          <ul class="list-unstyled mb-0">
-            <!--Email-->
-            <a href="mailto:tecnipres@hotmail.com"
-               type="button"
-               mdbBtn
+            <p>Av. 11 entre calle 26 y 28 </p>
+            <p>Col. Nuevo San José No. 2610 </p>
+            <p>C.P. 94550</p>
+            <p>Córdoba, Ver. México.</p>
+          </div>
+
+          <div class="col-md-6">
+            <a mdbBtn
                floating="true"
-               size="sm"
-               class="mx-1 mb-0 btn-email">
-              <i class="fa fa-envelope"></i>
+               class="button-primary waves-light"
+               mdbWavesEffect>
+              <i class="fa fa-phone"></i>
             </a>
-          </ul>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!--Buttons-->
-      <div class="row text-center wow fadeInDown">
-        <div class="col-md-6">
-          <a mdbBtn
-             floating="true"
-             class="button-primary waves-light"
-             mdbWavesEffect>
-            <i class="fa fa-map-marker"></i>
-          </a>
-          <p>Av. 11 entre calle 26 y 28 </p>
-          <p>Col. Nuevo San José No. 2610 </p>
-          <p>C.P. 94550</p>
-          <p>Córdoba, Ver. México.</p>
-        </div>
-
-        <div class="col-md-6">
-          <a mdbBtn
-             floating="true"
-             class="button-primary waves-light"
-             mdbWavesEffect>
-            <i class="fa fa-phone"></i>
-          </a>
-          <p>(271) 73 696 54</p>
+            <p>(271) 73 696 54</p>
+          </div>
         </div>
       </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-7">
+
+        <!--Google map-->
+        <agm-map [latitude]="map.lat"
+                 [longitude]="map.lng"
+                 style="height: 400px">
+          <agm-marker [latitude]="map.lat"
+                      [longitude]="map.lng"></agm-marker>
+        </agm-map>
+
+      </div>
+      <!--Grid column-->
+
     </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-7">
-
-      <!--Google map-->
-      <agm-map [latitude]="map.lat"
-               [longitude]="map.lng"
-               style="height: 400px">
-        <agm-marker [latitude]="map.lat"
-                    [longitude]="map.lng"></agm-marker>
-      </agm-map>
-
-    </div>
-    <!--Grid column-->
-
   </div>
-
 </section>
 <!--Section: Contact v.1-->
