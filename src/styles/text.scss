@@ -3,3 +3,25 @@
 .primary-text {
   color: $primary-color !important;
 }
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url("/assets/fonts/Mark.Pro.otf");
+}
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url("/assets/fonts/Mark.Pro.Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url("/assets/fonts/Mark.Pro.Black.otf");
+  font-weight: 900;
+}
+
+body {
+  font-family: 'Mark Pro';
+}
+

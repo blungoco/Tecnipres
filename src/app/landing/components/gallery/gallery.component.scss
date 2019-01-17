@@ -1,0 +1,37 @@
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+img {
+  width: auto;
+  object-fit: cover;
+}
+
+.tall {
+  height: 512px;
+}
+
+.short {
+  height: 256px;
+}
+
+.header {
+  width: 100%;
+  background-image: url('/assets/img/about_us.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgba($color: #26475F, $alpha: 0.75);
+  color: white;
+  width: 100%;
+  padding: 24px;
+}

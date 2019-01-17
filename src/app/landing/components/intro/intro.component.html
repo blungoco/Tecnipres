@@ -48,6 +48,15 @@
              mdbPageScroll
              [pageScrollDuration]="500"
              [pageScrollOffset]="200"
+             href="#gallery">Galería
+          </a>
+        </li>
+        <li class="nav-item waves-light"
+            mdbWavesEffect>
+          <a class="nav-link primary-text"
+             mdbPageScroll
+             [pageScrollDuration]="500"
+             [pageScrollOffset]="200"
              href="#contact">Contacto
           </a>
         </li>
@@ -60,22 +69,68 @@
   <div id="intro"
        class="view jarallax"
        data-jarallax='{"speed": 0.2}'
-       style="background-image: url(assets/img/background.jpg); background-attachment: fixed;">
+       style="background-image: url(assets/img/home.png); background-attachment: fixed;">
     <div class="full-bg-img mask rgba-white-light">
       <div class="container flex-center">
         <div class="row pt-5 mt-3 w-100">
           <div class="col-md-12 mb-3">
-            <div class="intro-info-content text-center text-white">
-              <h2 class="display-4 mb-5 wow fadeIn"
-                  data-wow-delay="0.3s">TECNIPRES</h2>
-              <h3 class="font-up mb-5 mt-1 font-bold wow fadeIn text-white"
-                  data-wow-delay="0.3s">TECNOLOGÍA EN RIEGO PRESURIZADO S.A. DE C.V.</h3>
+            <div class="intro-info-content text-left title">
+              <h2 class="display-2 mb-5 wow fadeIn"
+                  data-wow-delay="0.3s">Tecnipres</h2>
+              <h3 class="font-up mb-5 mt-1 font-bold wow fadeIn sub-title"
+                  data-wow-delay="0.3s">Tecnología en Riego Presurizado S.A. de C.V.</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+  <div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center flex-column flex-md-row">
+        <span class="mr-4">Spread the word!</span>
+        <div>
+          <a type="button" mdbBtn floating="true" size="sm" class="btn-fb waves-light" mdbWavesEffect>
+            <i class="fa fa-facebook"></i>
+          </a>
+          <!--Twitter-->
+          <a type="button" mdbBtn floating="true" size="sm" class="btn-tw waves-light" mdbWavesEffect>
+            <i class="fa fa-twitter"></i>
+          </a>
+          <!--Google +-->
+          <a type="button" mdbBtn floating="true" size="sm" class="btn-gplus waves-light" mdbWavesEffect>
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <!--Linkedin-->
+          <a type="button" mdbBtn floating="true" size="sm" class="btn-ins waves-light" mdbWavesEffect>
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <button type="button" mdbBtn color="primary" outline="true" rounded="true" class="ml-4 waves-light" mdbWavesEffect data-dismiss="modal"
+          (click)="frame.hide()">Close</button>
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
 
 </header>
 <!--Main Navigation-->

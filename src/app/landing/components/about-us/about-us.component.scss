@@ -1,6 +1,63 @@
 #about-us {
-  background-image: url('/assets/img/background-blue.png');
-  background-attachment: fixed;
-  background-size: cover;
   width: 100%;
+  background: white;
 }
+
+.mission {
+  color: green;
+  font-size: 80px;
+  padding: 15px;
+}
+
+.content {
+  padding-right: 64px;
+  margin-top: -4px;
+  font-size: 12px;
+}
+
+.vision {
+  color: red;
+  font-size: 60px;
+  padding: 25px;
+}
+
+.title {
+  padding: 4px;
+  background: #1c1c1c;
+  display: block;
+  color: white;
+  font-family: 'Mark Pro';
+  font-size: 10px;
+}
+
+.sub-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+.years {
+  width: 100%;
+  display: block;
+  padding: 18px 0;
+  font-size: 24px;
+  background-color: #26475F;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  background-image: url('/assets/img/about_us.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgba($color: #26475F, $alpha: 0.75);
+  color: white;
+  width: 100%;
+  padding: 24px;
+}
+

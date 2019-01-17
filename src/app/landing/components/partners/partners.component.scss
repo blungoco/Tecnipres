@@ -1,4 +1,22 @@
 img {
-  max-height: 100px;
-  min-height: 100px;
+  width: 128px;
+  height: auto;
+}
+
+.short-image {
+  width: 64px;
+}
+
+.header {
+  width: 100%;
+  background-image: url('/assets/img/partners.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgba($color: #1c1c1c, $alpha: 0.75);
+  color: white;
+  width: 100%;
+  padding: 24px;
 }
